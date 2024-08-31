@@ -83,18 +83,18 @@ function start() {
                     <a>Поздравительная открытка</a>
                 </div>
                 <div class="text-block">
-                    <h2>Как ты относишься к своим программным проектам?</h2>
+                    <h2>Как ты относишься к роли лидера в команде?</h2>
                     <button class="variant" onclick="clicks('a', this)">
                         <p class="number">1</p>
-                        <p class="gray-text">Увлеченно работаю, стараюсь довести до идеала</p>
+                        <p class="gray-text">Уверенно беру на себя ответственность и веду команду вперед</p>
                     </button>
                     <button class="variant" onclick="clicks('b', this)">
                         <p class="number">2</p>
-                        <p class="gray-text">Работаю над ними, но иногда теряю мотивацию</p>
+                        <p class="gray-text">Иногда чувствую себя неуверенно, но стараюсь справляться</p>
                     </button>
                     <button class="variant" onclick="clicks('c', this)">
                         <p class="number">3</p>
-                        <p class="gray-text">Делаю, что нужно, но не всегда довожу до конца</p>
+                        <p class="gray-text">Предпочитаю оставаться в тени и поддерживать других</p>
                     </button>
                 </div>
                 <button class="block-16 btn-arrow" onclick="next_1()">
@@ -121,18 +121,18 @@ function next_1() {
             <a>Поздравительная открытка</a>
         </div>
         <div class="text-block">
-            <h2>Какую музыку ты слушаешь во время работы?</h2>
+            <h2>Как ты взаимодействуешь с людьми в сложных ситуациях?</h2>
             <button class="variant" id="a" onclick="clicks('a', this)">
                 <p class="number">1</p>
-                <p class="gray-text">Классическую музыку или инструментальные треки</p>
+                <p class="gray-text">Внимательно слушаю и пытаюсь понять каждого, чтобы помочь</p>
             </button>
             <button class="variant" id="b" onclick="clicks('b', this)">
                 <p class="number">2</p>
-                <p class="gray-text">Саундтреки из аниме или фильмов</p>
+                <p class="gray-text">Стремлюсь найти компромисс, не вникая в детали</p>
             </button>
             <button class="variant" id="c" onclick="clicks('c', this)">
                 <p class="number">3</p>
-                <p class="gray-text">Что-то современное и популярное, чтобы зарядиться энергией</p>
+                <p class="gray-text">Иногда не понимаю, что люди на самом деле чувствуют, и действую интуитивно</p>
             </button>
         </div>
         <button class="block-16 btn-arrow" onclick="next_2()">
@@ -160,18 +160,18 @@ function next_2() {
             <a>Поздравительная открытка</a>
         </div>
         <div class="text-block">
-            <h2>Как ты справляешься с трудностями в коде?</h2>
+            <h2>Часто ли ты озвучиваешь свои мысли вслух?</h2>
             <button class="variant" id="a" onclick="clicks('a', this)">
                 <p class="number">1</p>
-                <p class="gray-text">Анализирую проблему и нахожу решение самостоятельно</p>
+                <p class="gray-text">Да, иногда говорю, не думая, что это может удивить окружающих</p>
             </button>
             <button class="variant" id="b" onclick="clicks('b', this)">
                 <p class="number">2</p>
-                <p class="gray-text">Спрашиваю у коллег или ищу решения в интернете</p>
+                <p class="gray-text">Стараюсь сначала подумать, но иногда всё-таки говорю вслух</p>
             </button>
             <button class="variant" id="c" onclick="clicks('c', this)">
                 <p class="number">3</p>
-                <p class="gray-text">Иногда могу забросить задачу и вернуться к ней позже</p>
+                <p class="gray-text">Почти всегда держу свои мысли при себе</p>
             </button>
         </div>
         <button class="block-16 btn-arrow" onclick="next_3()">
@@ -199,18 +199,18 @@ function next_3() {
             <a>Поздравительная открытка</a>
         </div>
         <div class="text-block">
-            <h2>Как ты относишься к командной работе?</h2>
+            <h2>Как ты изменился со временем?</h2>
             <button class="variant" id="a" onclick="clicks('a', this)">
                 <p class="number">1</p>
-                <p class="gray-text">Я предпочитаю работать самостоятельно, но могу работать в команде</p>
+                <p class="gray-text">Раньше просто плыл по течению, но теперь стараюсь активно влиять на свою жизнь</p>
             </button>
             <button class="variant" id="b" onclick="clicks('b', this)">
                 <p class="number">2</p>
-                <p class="gray-text">Мне нравится делиться идеями и обсуждать их с командой</p>
+                <p class="gray-text">Иногда действую спонтанно, но в целом стремлюсь быть более целеустремленным</p>
             </button>
             <button class="variant" id="c" onclick="clicks('c', this)">
                 <p class="number">3</p>
-                <p class="gray-text">Работаю в команде, но стараюсь избегать лишнего общения</p>
+                <p class="gray-text">Всегда был целеустремленным, но стараюсь сохранять гибкость</p>
             </button>
         </div>
         <button class="block-16 btn-arrow" onclick="next_4()">
@@ -238,18 +238,18 @@ function next_4() {
             <a>Поздравительная открытка</a>
         </div>
         <div class="text-block">
-            <h2>Какое у тебя отношение к аниме, связанному с музыкой?</h2>
+            <h2>Что для тебя значит музыка в твоей жизни?</h2>
             <button class="variant" id="a" onclick="clicks('a', this)">
                 <p class="number">1</p>
-                <p class="gray-text">Люблю аниме о музыке, особенно с драматическими моментами</p>
+                <p class="gray-text">Оркестр — моя страсть, очень люблю ДуДкИ</p>
             </button>
             <button class="variant" id="b" onclick="clicks('b', this)">
                 <p class="number">2</p>
-                <p class="gray-text">Смотрю такие аниме, но предпочитаю другие жанры</p>
+                <p class="gray-text">Музыка важна, но не всегда получается уделять ей достаточно времени</p>
             </button>
             <button class="variant" id="c" onclick="clicks('c', this)">
                 <p class="number">3</p>
-                <p class="gray-text">Не особо интересуюсь такими аниме, но могу посмотреть ради интереса</p>
+                <p class="gray-text">Музыка нравится, но есть и другие увлечения, которые мне важны</p>
             </button>
         </div>
         <button class="block-16 btn-arrow" onclick="next_5()">
