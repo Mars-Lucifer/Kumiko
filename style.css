@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Стилизация скролла для WebKit браузеров (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Ширина скролла */
+    background-color: var(--gray-minus); /* Цвет фона скролла */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #363642; /* Цвет ползунка */
+    border-radius: 10px; /* Закругление углов ползунка */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+* {
+    font-family: "Manrope", system-ui;
+    box-sizing: border-box;
+    margin: 0;
+    color: var(--white);
+}
+
+:root {
+    --black: #171719;
+    --white: #F7F7FC;
+    --gray: #8D8D99;
+    --gray-minus: #26262E;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 0;
+}
+
+.left-block {
+    padding: 40px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.right-block {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/kumi1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.block-16 {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.love {
+    height: 48px;
+    aspect-ratio: 1;
+}
+
+.text-block {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+a {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    transition: color 0.2s ease;
+    text-align: left;
+}
+
+.gray-text {
+    color: var(--gray);
+}
+
+.paragprah {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 500px;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 5px;
+    border-radius: 100px;
+    background-color: var(--gray-minus);
+    display: flex;
+}
+
+.bar-bar {
+    width: 5px;
+    height: 5px;
+    background-color: var(--white);
+    border-radius: 100px;
+    transition: width 0.4s ease;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn-arrow {
+    transition: gap 0.4s ease, padding 0.4s ease;
+}
+.btn-arrow:hover {
+    gap: 10px;
+    padding-left: 24px;
+}
+
+
+
+.left-block, .right-block {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(0);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.new-blocks {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.new-blocks.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.variant {
+    background-color: var(--gray-minus);
+    border-radius: 28px;
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+.variant:hover p {
+    color: var(--white);
+}
+.active {
+    background-color: var(--white);
+}
+.active p {
+    color: var(--black);
+}
+.active .number {
+    color: var(--white);
+}
+.active:hover p {
+    color: var(--black);
+}
+.active:hover .number {
+    color: var(--white);
+}
+
+.number {
+    height: calc(100%);
+    padding: 12px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    border-radius: 16px;
+    background-color: var(--black);
+    color: var(--gray);
+    transition: color 0.2s ease;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.img-2 {
+    animation: grad 12s ease-in infinite;
+}
+@keyframes grad {
+    0% {
+        width: 80%;
+        transform: rotate(0deg);
+    }
+    25% {
+        width: 70%;
+        transform: rotate(20deg);
+    }
+    50% {
+        width: 90%;
+        transform: rotate(-10deg);
+    }
+    100% {
+        width: 80%;
+        transform: rotate(0deg);
+    }
+}
+
+.img-3 {
+    background-image: url("/img/kumi2.png");
+}
+
+.ban {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.ban .block-16 {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%, 0%);
+}
+.ban p {
+    text-align: center;
+    width: 250px;
+}
+
+@media (max-width: 768px) {
+    .ban {
+        display: flex;
+    }
+    .main-container {
+        display: none;
+    }
+}
+@media (max-width: 1540px) {
+    .left-block {
+        gap: 38px;
+    }
+    .text-block {
+        transform-origin: 0 0;
+        transform: scale(0.8);
+    }
+}
